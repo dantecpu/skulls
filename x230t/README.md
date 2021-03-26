@@ -13,15 +13,11 @@ We release multiple different, but _very similar_ images you can choose from.
 They all should work on all versions of the X230T. These are the
 differences; (xxxxxxxxxx stands for random characters in the filename):
 * `x230t_coreboot_seabios_xxxxxxxxxx_top.rom` includes the _proprietary_
-[VGA BIOS](https://en.wikipedia.org/wiki/Video_BIOS) from [Intel](https://www.intel.com/content/www/us/en/intelligent-systems/intel-embedded-graphics-drivers/faq-bios-firmware.html)
+[VGA BIOS](https://en.wikipedia.org/wiki/Video_BIOS) from Intel
 which is non-free software. It is executed in "secure" mode.
 * `x230t_coreboot_seabios_free_xxxxxxxxxx_top.rom` includes the
 [VGA BIOS](https://en.wikipedia.org/wiki/Video_BIOS)
 [SeaVGABIOS](https://www.seabios.org/SeaVGABIOS) which is free software.
-While technically more interesting, visually this is currently not as
-beautiful:
-  * The [bootspash image is not shown](https://github.com/merge/skulls/issues/59).
-  * Early boot console messages (after your HDD's bootloader has started a kernel) might be [missing](https://github.com/merge/skulls/issues/46).
 
 
 ## table of contents
@@ -84,11 +80,6 @@ at [github.com/hamishcoleman/thinkpad-ec](https://github.com/hamishcoleman/think
 #### preparation: required hardware
 * An 8 Pin SOIC Clip, for example from
 [Pomona electronics](https://www.pomonaelectronics.com/products/test-clips/soic-clip-8-pin)
-(for availability, check
-[aliexpress](https://de.aliexpress.com/item/POMONA-SOIC-CLIP-5250-8pin-eeprom-for-tacho-8pin-cable-for-pomana-soic-8pin/32814247676.html) or
-[elsewhere](https://geizhals.eu/?fs=pomona+test+clip+5250))
-or alternatively hooks like
-[E-Z-Hook XKM](https://e-z-hook.com/test-hooks/micro-hook/xkm/)
 * 6 [female](https://electronics.stackexchange.com/questions/37783/how-can-i-create-a-female-jumper-wire-connector)
 [jumper wires](https://en.wikipedia.org/wiki/Jump_wire) like
 [these](https://geizhals.eu/jumper-cable-female-female-20cm-a1471094.html)
